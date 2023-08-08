@@ -16,19 +16,6 @@
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run lint"
       ]
-    },
-    {
-      "source": "/function",
-      "codebase": "cnn",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run lint"
-      ]
     }
   ],
   "database": {
@@ -39,7 +26,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "dist",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
